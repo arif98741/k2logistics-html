@@ -819,12 +819,11 @@ section {
 
 .garment-inspection-carousel .testimonial-item {
     box-sizing: content-box;
-    min-height: 560px;
+    min-height: 463px;
     margin-left: 30px;
     background: #fff;
     border-radius: 6px;
 }
-
 .garment-inspection-carousel .testimonial-item .testimonial-img {
     padding: auto;
 }
@@ -932,7 +931,7 @@ wire house inspection
 
 .wire-house-inspection-carousel .testimonial-item {
     box-sizing: content-box;
-    min-height: 560px;
+    min-height: 440px;
     margin-left: 30px;
     background: rgb(32 36 86);
     border-radius: 6px;
