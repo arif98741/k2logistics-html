@@ -1231,8 +1231,18 @@ wire house inspection
 
 #production-support h2 {
     text-transform: uppercase;
-    text-align: right;
-    margin-bottom: 50px;
+    text-align: left;
+}
+
+#production-support h2.merchangdising {
+    background: #F8F7F7;
+    width: 308px;
+    padding: 10px;
+    color: #162058;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 3px;
 }
 
 #production-support .price-tag p {
@@ -1296,7 +1306,13 @@ wire house inspection
 
 .our-value h1 {
     text-transform: uppercase;
-    color: #fff;
+    background: #F8F7F7;
+    width: 270px;
+    margin: 0 auto;
+    color: #162058;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 5px;
 }
 
 .our-value p {
