@@ -82,7 +82,7 @@ h6 {
 }
 
 #header.header-scrolled {
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #header .logo h1 {
@@ -175,7 +175,7 @@ h6 {
     visibility: hidden;
     padding: 10px 0;
     background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
     transition: ease all 0.3s;
 }
 
@@ -362,12 +362,12 @@ h6 {
 #hero {
     background-image: url("../img/site/desk-meeting.jpeg");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right top;
+    background-position: center center;
     margin-top: 70px;
     padding: 60px 0;
     background-size: cover;
     position: relative;
+    min-height: 460px;
 }
 
 #hero .layer {
@@ -401,16 +401,15 @@ h6 {
     width: 539px;
     display: block;
     margin: 0 auto;
-    /* font-family: Arial; */
     letter-spacing: 2px;
 }
 
 #hero h3 {
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0px
 }
 
@@ -453,7 +452,7 @@ h6 {
 
 @media (min-width: 1024px) {
     #hero {
-        background-attachment: fixed;
+        /*background-attachment: fixed;*/
     }
 }
 
@@ -510,7 +509,7 @@ h6 {
 }
 
 #hero-about p {
-    margin: 0 0 20px 0; */
+    margin: 0 0 20px 0;
     color: #202456;
     text-align: left;
     width: 60%;
@@ -885,6 +884,7 @@ section {
     padding: 5px 0px 20px 2px;
     position: relative;
     z-index: 1;
+    min-height: 110px;
 }
 
 .garment-inspection-carousel .owl-nav,
@@ -999,6 +999,7 @@ wire house inspection
     position: relative;
     z-index: 1;
     color: #fff;
+    min-height: 110px;
 }
 
 .wire-house-inspection-carousel .owl-nav,
@@ -1092,7 +1093,67 @@ wire house inspection
     position: absolute;
     z-index: 1;
 }
+/*test*/
+#our-vision .first img,
+#our-vision .second img,
+#our-vision .third img
+{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    cursor:pointer;
+}
 
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        padding: 20px;
+        width: 25%;
+    }
+    30%
+    {
+        /*-webkit-transform: translateX(-25px);*/
+        /*transform: translateY(-25px);*/
+        padding: 16px;
+        width: 65%;
+
+    }
+    50%
+    {
+        /*-webkit-transform: translateX(3px);*/
+        /*transform: translateX(3px);*/
+        padding: 14px;
+        width: 75%;
+    }
+    65%
+    {
+        /*-webkit-transform: translateX(3px);*/
+        /*transform: translateX(3px);*/
+        padding: 12px;
+        width: 85%;
+    }
+    80%
+    {
+        /*-webkit-transform: translateX(2px);*/
+        /*transform: translateX(2px);*/
+        padding: 10px;
+        width: 90%;
+    }
+    100%
+    {
+        /*-webkit-transform: translateX(0);*/
+        /*transform: translateX(0);*/
+        padding: 0px;
+        width: 100%;
+    }
+}
+
+
+/*end test*/
 #our-vision .image-block .second {
     position: relative;
     margin-top: 190px;
@@ -1484,59 +1545,6 @@ wire house inspection
 }
 
 
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-
-.faq {
-    padding: 60px 0;
-}
-
-.faq .faq-list {
-    padding: 0;
-    list-style: none;
-}
-
-.faq .faq-list li {
-    padding: 0 0 20px 25px;
-}
-
-.faq .faq-list a {
-    display: block;
-    position: relative;
-    font-family: #009cea;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.faq .faq-list i {
-    font-size: 18px;
-    position: absolute;
-    left: -25px;
-    top: 6px;
-}
-
-.faq .faq-list p {
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-
-.faq .faq-list a.collapse {
-    color: #009cea;
-}
-
-.faq .faq-list a.collapsed {
-    color: #343a40;
-}
-
-.faq .faq-list a.collapsed:hover {
-    color: #009cea;
-}
-
-.faq .faq-list a.collapsed i::before {
-    content: "\eab2" !important;
-}
-
 
 /*--------------------------------------------------------------
 # Contact
@@ -1794,7 +1802,7 @@ wire house inspection
 }
 
 #footer .address-block {
-  
+
 }
 
 #footer .address-block i {
@@ -1820,7 +1828,7 @@ wire house inspection
 }
 
 #footer .follow-us    {
-  
+
 }
 
 #footer .follow-us h2   {
